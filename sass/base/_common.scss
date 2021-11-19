@@ -1,0 +1,47 @@
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: roboto, sant-serif;
+  font-size: 14;
+  line-height: 1.714em;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+}
+
+.item {
+  text-decoration: none;
+  list-style: none;
+}
+.free-line {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+  outline: none;
+}

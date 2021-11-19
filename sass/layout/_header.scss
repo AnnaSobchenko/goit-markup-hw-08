@@ -1,0 +1,23 @@
+.header {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+}

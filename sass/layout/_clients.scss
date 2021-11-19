@@ -1,0 +1,27 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__company {
+    width: 170px;
+    height: 92px;
+    text-align: center;
+    border: 1px solid var(--fill-clients-color);
+    border-radius: 4px;
+    padding: 16px 32px;
+    fill: var(--fill-clients-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover .clients__company,
+    &:focus .clients__company {
+      fill: var(--accent-color);
+      border: 1px solid var(--accent-color);
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
