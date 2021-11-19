@@ -387,8 +387,16 @@ body {
   }
 }
 
-.works {
-  padding-bottom: 94px;
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    padding-bottom: 94px;
+  }
 }
 
 .works .item:not(:last-child) {
@@ -399,13 +407,21 @@ body {
   position: relative;
 }
 
-.works__title {
-  position: absolute;
-  width: 100%;
-  height: 70px;
-  background-color: var(--works-bg-color);
-  display: flex;
-  bottom: 0;
+@media screen and (max-width: 1199px) {
+  .works__title {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works__title {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    background-color: var(--works-bg-color);
+    display: flex;
+    bottom: 0;
+  }
 }
 
 .works__title .title-third {
@@ -422,8 +438,22 @@ body {
 
 .command {
   background-color: #f0f0fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .command {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .command__item {
@@ -431,8 +461,38 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.command__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .command__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .command__item:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .command__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .command__item:nth-child(2), .command__item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .command__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.command__list {
+  flex-wrap: wrap;
 }
 
 .command__card {
@@ -457,6 +517,18 @@ body {
   text-decoration: none;
   text-align: center;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .command__title-secondary {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .command__title-secondary {
+    margin-bottom: 50px;
+  }
 }
 
 .command-social__list {
