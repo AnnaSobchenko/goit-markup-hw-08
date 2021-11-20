@@ -493,6 +493,7 @@ body {
 
 .command__list {
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .command__card {
