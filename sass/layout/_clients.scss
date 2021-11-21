@@ -1,8 +1,14 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__company {
-    width: 170px;
+    // width: 170px;
     height: 92px;
     text-align: center;
     border: 1px solid var(--fill-clients-color);
@@ -22,6 +28,20 @@
     }
   }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+    }
+  }
+  &__list {
+    @media screen and (max-width: 767px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
   }
 }
