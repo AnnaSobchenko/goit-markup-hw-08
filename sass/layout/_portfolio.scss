@@ -119,14 +119,30 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0;
   }
-  margin-right: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
 }
-.item-works:not(:nth-last-child(-n + 3)) {
+
+.item-works {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin: 0;
   }
-  margin-bottom: 30px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
+.item-works:nth-last-child(-n + 3) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
 .list-portfolio-btn .item:hover,
 .list-portfolio-btn .item:focus {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),

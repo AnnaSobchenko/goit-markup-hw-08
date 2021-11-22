@@ -138,32 +138,46 @@
               <div class="works__title">
                 <p class="title-third">Десктопные приложения</p>
               </div>
-              <img
-                src="./images/box1.jpg"
-                alt="написание програм"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <img
+                  src="./images/box1.jpg"
+                  alt="написание програм"
+                  width="370"
+                  height="100%"
+              /></picture>
             </li>
             <li class="item">
               <div class="works__title">
                 <p class="title-third">Мобильные приложения</p>
               </div>
-              <img
-                src="./images/box2.jpg"
-                alt="разработка мобильной версии"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+
+                <img
+                  src="./images/box2.jpg"
+                  alt="разработка мобильной версии"
+                  width="370"
+              /></picture>
             </li>
             <li class="item">
               <div class="works__title">
                 <p class="title-third">Дизайнерские решения</p>
               </div>
-              <img
-                src="./images/box3.jpg"
-                alt="различные цветовые решения"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                  media="(min-width: 1200px)" />
+                <img
+                  src="./images/box3.jpg"
+                  alt="различные цветовые решения"
+                  width="370"
+              /></picture>
             </li>
           </ul>
         </div>
@@ -174,11 +188,34 @@
           <h2 class="title-secondary command__title-secondary">Наша команда</h2>
           <ul class="list command__list">
             <li class="item command__item">
-              <img
-                src="./images/team-card1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-cards/team-card1.jpg         1x,
+                    ./images/team-cards/team-card1-2x-desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card1-1x-tabl.jpg 1x,
+                    ./images/team-cards/team-card1-2x-tabl.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card1-1x-mob.jpg 1x,
+                    ./images/team-cards/team-card1-2x-mob.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-cards/team-card1.jpg"
+                  alt="Игорь Демьяненко"
+                  width=""
+                />
+              </picture>
               <div class="command__card">
                 <h3 class="command__title">Игорь Демьяненко</h3>
                 <p class="command__text" lang="en">Product Designer</p>
@@ -215,11 +252,34 @@
               </div>
             </li>
             <li class="item command__item">
-              <img
-                src="./images/team-card2.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-cards/team-card2.jpg         1x,
+                    ./images/team-cards/team-card2-2x-desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card2-1x-tabl.jpg 1x,
+                    ./images/team-cards/team-card2-2x-tabl.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card2-1x-mob.jpg 1x,
+                    ./images/team-cards/team-card2-2x-mob.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-cards/team-card2.jpg"
+                  alt="Ольга Репина"
+                  width=""
+                />
+              </picture>
               <div class="command__card">
                 <h3 class="command__title">Ольга Репина</h3>
                 <p class="command__text" lang="en">Frontend Developer</p>
@@ -256,11 +316,34 @@
               </div>
             </li>
             <li class="item command__item">
-              <img
-                src="./images/team-card3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-cards/team-card3.jpg         1x,
+                    ./images/team-cards/team-card3-2x-desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card3-1x-tabl.jpg 1x,
+                    ./images/team-cards/team-card3-2x-tabl.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card3-1x-mob.jpg 1x,
+                    ./images/team-cards/team-card3-2x-mob.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-cards/team-card3.jpg"
+                  alt="Николай Тарасов"
+                  width=""
+                />
+              </picture>
               <div class="command__card">
                 <h3 class="command__title">Николай Тарасов</h3>
                 <p class="command__text" lang="en">Marketing</p>
@@ -297,11 +380,34 @@
               </div>
             </li>
             <li class="item command__item">
-              <img
-                src="./images/team-card4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-cards/team-card4.jpg         1x,
+                    ./images/team-cards/team-card4-2x-desk.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card4-1x-tabl.jpg 1x,
+                    ./images/team-cards/team-card4-2x-tabl.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-cards/team-card4-1x-mob.jpg 1x,
+                    ./images/team-cards/team-card4-2x-mob.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/team-cards/team-card4.jpg"
+                  alt="Михаил Ермаков"
+                  width=""
+                />
+              </picture>
               <div class="command__card">
                 <h3 class="command__title">Михаил Ермаков</h3>
                 <p class="command__text" lang="en">UI Designer</p>
@@ -404,7 +510,7 @@
         </div>
       </section>
     </main>
-    <!-- 
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="contact-social">
@@ -474,7 +580,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
