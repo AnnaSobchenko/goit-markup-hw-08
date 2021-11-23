@@ -48,8 +48,7 @@ body {
   margin: 0;
 }
 
-.visually-hidden,
-.is-hidden {
+.visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -128,10 +127,23 @@ body {
 
 .title-secondary {
   font-style: 700;
-  font-size: 36px;
   line-height: 1.17;
-  margin-bottom: 50px;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .title-secondary {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-secondary {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .title-third {
@@ -185,10 +197,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .menu-open-btn {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    transform: translate(-100%);
     outline: none;
     background-color: transparent;
     padding: 0;
@@ -565,13 +573,12 @@ body {
   }
 }
 
-.peculiarities__item {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities__item {
     width: 354px;
+  }
+  .peculiarities__item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
   }
   .peculiarities__item:nth-of-type(2n + 1) {
     margin-right: 30px;
@@ -584,6 +591,7 @@ body {
   }
   .peculiarities__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -620,7 +628,6 @@ body {
 @media screen and (min-width: 1200px) {
   .peculiarities__list {
     align-items: center;
-    margin-bottom: 30px;
     flex-wrap: nowrap;
   }
 }
@@ -954,9 +961,15 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .contact {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .contact {
+    margin-bottom: 0;
   }
 }
 
@@ -1070,6 +1083,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -1388,7 +1402,6 @@ body {
 .modal {
   position: absolute;
   padding: 40px;
-  width: 528px;
   min-height: 581px;
   border-radius: 4px;
   background-color: var(--primary-bg-color);
@@ -1397,6 +1410,18 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .close-btn {
