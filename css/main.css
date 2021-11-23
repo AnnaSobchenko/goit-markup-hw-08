@@ -303,6 +303,10 @@ body {
   padding-left: 15px;
 }
 
+.mob-current {
+  color: var(--accent-color);
+}
+
 .nav__logo {
   color: var(--title-text-color);
   font-family: raleway, sans-serif;
