@@ -221,7 +221,6 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-100%);
   outline: none;
   background-color: transparent;
   padding: 0;
@@ -459,7 +458,7 @@ body {
   background-position: center;
   background-size: cover;
   flex-grow: 1;
-  padding: 60px 118px;
+  padding: 118px 60px;
   margin: 0 auto;
 }
 
