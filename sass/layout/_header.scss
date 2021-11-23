@@ -21,3 +21,118 @@
     align-items: center;
   }
 }
+
+.menu-icon {
+  fill: #000;
+}
+
+.menu-open-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%);
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-color: transparent;
+}
+
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-bg-color);
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%);
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-color: transparent;
+}
+
+.mob-menu-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.mob-menu-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-link-contact {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.76;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  margin-bottom: 32px;
+}
+
+.mob-link-mail {
+  display: block;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.mob-link-mail {
+  margin-bottom: 64px;
+}
+
+.mob-social-list {
+  display: flex;
+  justify-content: space-around;
+  font-size: 22px;
+}
+.mob-link-contact {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.mob-social-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mob-social-item {
+  height: 22px;
+  &:not(:last-child) {
+    padding-right: 15px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &:not(:first-child) {
+    padding-left: 15px;
+  }
+}
