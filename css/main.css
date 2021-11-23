@@ -223,6 +223,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 4;
 }
 
 .menu-close-btn {
@@ -570,6 +571,12 @@ body {
     width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .peculiarities__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
@@ -1354,6 +1361,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .item-works {
     margin: 0;
+    z-index: 1;
   }
 }
 
